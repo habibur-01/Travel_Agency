@@ -19,6 +19,16 @@ body {
     align-items: center;
 }
 
+.menu-img {
+    display: none;
+}
+
+.menu-icon {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+}
+
 .logo-name {
     font-size: 40px;
     font-weight: 700;
@@ -175,6 +185,7 @@ body {
     font-weight: 700;
     text-align: center;
     margin-top: 10px;
+    color: #171e4b;
 }
 
 .service-container {
@@ -699,7 +710,8 @@ body {
     border: 1px solid #171e4b;
     color: #171e4b;
 }
-.telegram-icon{
+
+.telegram-icon {
     width: 64px;
     height: 64px;
     border-radius: 50%;
@@ -711,21 +723,23 @@ body {
     top: -24px;
     right: -24px;
 }
-.telegram-icon img{
+
+.telegram-icon img {
     width: 32px;
     height: 32px;
 }
 
-.footer-details{
-    background-image: linear-gradient(to bottom right, #ffff, #fff, #fefefe,#fefefe,#faf5fc,#f5eaf8);
+.footer-details {
+    background-image: linear-gradient(to bottom right, #ffff, #fff, #fefefe, #fefefe, #faf5fc, #f5eaf8);
     padding-top: 100px;
 }
+
 .footer-container {
     display: flex;
     justify-content: space-between;
     padding-left: 60px;
     padding-right: 60px;
-    
+
 }
 
 .footer-title {
@@ -758,11 +772,12 @@ body {
     opacity: 0.7;
 }
 
-.social-platform{
+.social-platform {
     display: flex;
     gap: 20px;
 }
-.social-icon{
+
+.social-icon {
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -772,18 +787,21 @@ body {
     justify-content: center;
     align-items: center;
 }
-.social-icon .instagram{
+
+.social-icon .instagram {
     width: 100%;
     height: 100%;
     border-radius: 50%;
     object-fit: fill;
 }
-.socila-img{
+
+.socila-img {
     width: 18px;
     height: 18px;
     object-fit: fill;
 }
-.copyright-text{
+
+.copyright-text {
     font-size: 14px;
     opacity: 0.8;
     color: #171e4b;
@@ -793,5 +811,361 @@ body {
 }
 
 @media screen and (max-width: 425px) {
-    
+    body {
+        width: 100%;
+
+    }
+
+    .navbar {
+        position: relative;
+        padding: 0px 30px;
+    }
+
+    .menu-img {
+        display: block;
+    }
+
+    .menubar {
+        display: none;
+        position: absolute;
+        top: 80%;
+        left: 5%;
+    }
+
+    .menubar ul {
+
+        flex-direction: column;
+        width: 300px;
+        background-color: #f5f5f5;
+        box-shadow: 0px 0px 16px #cecbcb;
+        gap: 20px;
+        padding: 20px;
+
+    }
+
+    .show-nav {
+        display: block;
+    }
+
+    .banner-container {
+        flex-direction: column;
+        margin: 60px 0px;
+        width: 100%;
+        height: auto;
+
+
+    }
+
+    .banner-content {
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    .banner-title {
+        font-size: 54px;
+    }
+
+    .banner-description {
+        font-size: 14px;
+    }
+
+    .banner-subtitle {
+        font-size: 18px;
+    }
+
+    .banner-img {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .card-container {
+
+        flex-direction: column;
+        gap: 100px;
+        align-items: center;
+
+    }
+
+    .location-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .book-section {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .step-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .sub-card {
+        right: 10%;
+        bottom: -24%;
+    }
+
+    .testimonials-container {
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .testimonials-card {
+        width: 320px;
+        margin-top: 60px;
+    }
+
+    .testimonials-para {
+        font-size: 14px;
+    }
+
+    .user {
+        left: -5%;
+    }
+
+    .dot-container {
+        left: 10%;
+        bottom: -10%;
+    }
+
+    .brand-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .brand-name {
+        height: 60px;
+        width: 100px;
+    }
+
+    .subscribe-container {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .subscribe-container {
+        height: auto;
+        padding: 50px 10px;
+
+    }
+
+    .subscribe-content {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .input-field {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .input-field input {
+        width: 100%;
+        padding-left: 45px;
+        margin-left: -20px;
+    }
+
+    .email-icon {
+        left: 0%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 60px;
+        margin-top: 40px;
+    }
+
+    .main-title {
+        font-size: 36px;
+        color: #171e4b;
+    }
+
+
+}
+
+@media screen and (min-width: 426px) and (max-width:768px) {
+    body {
+        width: 100%;
+    }
+
+    .navbar {
+        position: relative;
+        padding: 0px 30px;
+    }
+
+    .menu-img {
+        display: block;
+    }
+
+    .menubar {
+        display: none;
+        position: absolute;
+        top: 80%;
+        left: 5%;
+    }
+
+    .menubar ul {
+
+        flex-direction: column;
+        width: 300px;
+        background-color: #f5f5f5;
+        box-shadow: 0px 0px 16px #cecbcb;
+        gap: 20px;
+        padding: 20px;
+
+    }
+
+    .show-nav {
+        display: block;
+    }
+
+    .banner-container {
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px 0px;
+        width: 100%;
+        height: auto;
+        background-image: url("./images/smiley-woman-posing-her-baggage.png");
+        height: 600px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #aaacb8;
+        background-blend-mode: overlay;
+    }
+
+    .banner-content {
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    .banner-title {
+        font-size: 54px;
+    }
+
+    .banner-img {
+        display: none;
+    }
+
+    /* Services */
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 100px;
+    }
+
+    /* Destination */
+    .location-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0px 10px;
+        gap: 60px;
+    }
+
+    /* booking step */
+    .book-section {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .step-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .trip-card-container {
+        width: 100%;
+    }
+    /* testimonials */
+
+    .testimonials-container {
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .testimonials-card {
+        width: 60%;
+        margin: 60px auto;
+    }
+
+    .testimonials-para {
+        font-size: 14px;
+    }
+
+    .user {
+        left: -5%;
+    }
+
+    .dot-container {
+        left: 10%;
+    }
+
+    /* brand section */
+    .brand-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .brand-name {
+        height: 60px;
+        width: 100px;
+    }
+
+    /* subscribe section */
+
+    .subscribe-container {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .subscribe-container {
+        height: auto;
+        padding: 60px 20px;
+
+    }
+
+    .subscribe-content {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .input-field {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .input-field input {
+        width: 100%;
+        padding-left: 45px;
+        margin-left: -20px;
+    }
+
+    .email-icon {
+        left: 0%;
+    }
+
+    /* footer */
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+        margin-top: 40px;
+    }
+    .copyright-text{
+        text-align: left;
+        padding-left: 60px;
+    }
+
+    .main-title {
+        font-size: 36px;
+        color: #171e4b;
+    }
 }

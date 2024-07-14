@@ -2,11 +2,11 @@ let showNav = false;
 
 function toggleNav() {
   showNav = !showNav;
-  const navbar = document.querySelector(".navbar");
+  const navbar = document.querySelector(".menubar");
   if (showNav) {
-    navbar.classList.add("navbar-show");
+   navbar.classList.add("show-nav");
   } else {
-    navbar.classList.remove("navbar-show");
+    navbar.classList.remove("show-nav");
   }
   console.log("Navbar is now " + (showNav ? "visible" : "hidden"));
 }
