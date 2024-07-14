@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="./script/script.js"></script>
         <link rel="stylesheet" href="./style.css">
         <title>Travel Agency</title>
     </head>
@@ -12,7 +11,8 @@
 
             <nav class="navbar">
                 <div class="menu-img">
-                    <img src="./images/menu.png" alt="" class="menu-icon" onclick="toggleNav()">
+                    <img src="./images/menu.png" alt class="menu-icon"
+                        onclick="toggleNav()">
                 </div>
                 <div class="logo">
                     <h1 class="logo-name">Travellara</h1>
@@ -56,9 +56,8 @@
                         </div>
                         <div class="play-btn">
                             <img src="./images/play.png" class="play-icon"
-                                alt="play icon">
-                            <img src="./images/pause-button.png"
-                                class="play-icon pause-btn" alt="pause icon">
+                                alt="play icon" onclick="playDemo()">
+                            
                             <p>Play Demo</p>
                         </div>
                     </div>
@@ -66,6 +65,13 @@
                 <div class="banner-img">
                     <img src="./images/smiley-woman-posing-her-baggage.png"
                         class="image" alt>
+                </div>
+                <div class="vodeo-container" id="popUp">
+                    <p onclick="pauseDemo()">Close</p>
+                    <video width="380" height="280" controls>
+                        <source src="./images/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
             <!-- Our services -->
@@ -413,5 +419,8 @@
                 </div>
             </div>
         </footer>
+
+        <!-- javascript -->
+        <script src="./script/script.js"></script>
     </body>
 </html>

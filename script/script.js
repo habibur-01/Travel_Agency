@@ -11,6 +11,23 @@ function toggleNav() {
 }
 
 
+
+    let popup = document.getElementById("popUp");
+
+    function playDemo() {
+        popup.classList.add("open-popup");
+        
+    }
+
+    function pauseDemo() {
+        popup.classList.remove("open-popup");
+        
+    }
+
+  
+
+
+
 // const initSlider = () => {
 //     const testimonals = document.querySelector(".slider-wrapper .testimonial-cards")
 //     const slideButtons = document.querySelectorAll(".slider-wrapper .slider-btn")

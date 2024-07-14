@@ -84,6 +84,29 @@ body {
     align-items: center;
 }
 
+.vodeo-container {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.vodeo-container p{
+    font-size: 16px;
+    color: #dd6952;
+}
+.vodeo-container p:hover{
+   cursor: pointer;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, 50%) scale(1);
+
+}
+
 .banner-content {
     width: 40%;
 }
@@ -167,6 +190,12 @@ body {
     height: 44px;
     display: none;
     border-radius: 50%;
+}
+.hidden-btn{
+    display: none;
+}
+.visible-btn{
+    display: block;
 }
 
 .pause-btn:hover {
@@ -1082,6 +1111,7 @@ body {
     .trip-card-container {
         width: 100%;
     }
+
     /* testimonials */
 
     .testimonials-container {
@@ -1159,7 +1189,8 @@ body {
         gap: 60px;
         margin-top: 40px;
     }
-    .copyright-text{
+
+    .copyright-text {
         text-align: left;
         padding-left: 60px;
     }
